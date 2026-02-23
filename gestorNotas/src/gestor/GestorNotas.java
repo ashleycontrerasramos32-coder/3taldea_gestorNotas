@@ -20,7 +20,7 @@ public class GestorNotas {
         for (int i = 0; i < notas.length; i++) {
             suma += notas[i];
         }
-        return suma / notas.length;
+        return suma / contador;
     }
 
     public double obtenerNotaMaxima() {
