@@ -70,6 +70,10 @@ public class GestorNotas {
         double suma = 0;
 
         for (int i = 0; i < contador; i++) {
+        	
+        	if (notas[i] < 0 || notas[i] > 10) {
+                return "Existen notas fuera de rango.";
+            }
 
             suma += notas[i];
 
@@ -79,9 +83,6 @@ public class GestorNotas {
                 suspensos++;
             }
 
-            if (notas[i] < 0 || notas[i] > 10) {
-                return "Existen notas fuera de rango.";
-            }
         }
 
         double promedio = suma / contador;
