@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Principal {
 
     public static void main(String[] args) {
-
+    	//Aitzolen froga
         Scanner sc = new Scanner(System.in);
         GestorNotas gestor = new GestorNotas();
 
